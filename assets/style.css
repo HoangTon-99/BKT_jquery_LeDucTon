@@ -1,10 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 a:link,
 a:visited,
@@ -12,42 +17,68 @@ a:active {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  color: #000; }
+  color: #000;
+}
 
 a:hover {
-  color: #85D6CB; }
+  color: #85D6CB;
+}
 
 .container #nav-container {
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1em 0;
-  background-color: #fff; }
+  background-color: #fff;
+}
+
+.container #nav {
+  display: flex;
+  justify-content: space-around;
+  height: 3em;
+  line-height: 3em;
+}
+
 .container .nav-link {
   padding: 0 1em;
   margin: 0 3em;
   border-radius: 2em;
-  transition: all .5s; }
+  transition: all .5s;
+}
+
 .container a.active {
-  color: #fff; }
+  color: #fff;
+}
+
 .container a.nav-link.active:hover {
   padding: 0 4em;
-  margin: 0; }
+  margin: 0;
+}
+
 .container section {
-  height: 100vh; }
+  height: 100vh;
+}
+
 .container #home,
 .container a.active[href="#home"] {
-  background-color: #85D6CB; }
+  background-color: #85D6CB;
+}
+
 .container #about,
 .container a.active[href="#about"] {
   background-color: #339CC7;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+}
+
 .container #work,
 .container a.active[href="#work"] {
-  background-color: #0378A6; }
+  background-color: #0378A6;
+}
+
 .container #contact,
 .container a.active[href="#contact"] {
-  background-color: #005778; }
+  background-color: #005778;
+}
 
 #btn-back-to-top {
   position: fixed;
@@ -59,11 +90,13 @@ a:hover {
   background: #ccc;
   border: none;
   cursor: pointer;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 #btn-back-to-top:hover {
   background-color: #ececec;
   color: black;
-  border: none; }
+  border: none;
+}
 
 /*# sourceMappingURL=style.css.map */
